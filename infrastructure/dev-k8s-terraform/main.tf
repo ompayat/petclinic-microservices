@@ -30,7 +30,7 @@ resource "aws_security_group" "petclinic-mutual-sg" {
   }
 
     ingress {
-    protocol = "udp"
+    protocol = "udp"       #for flannel comminication#
     from_port = 8472
     to_port = 8472
     self = true
