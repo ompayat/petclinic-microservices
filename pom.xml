@@ -73,7 +73,20 @@
 
         </dependencies>
     </dependencyManagement>
-
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>maven-releases</name>
+            <!-- REPLACE NEXUS SERVER PRIVATE IP -->
+            <url>http://172.31.69.72:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>maven-snapshots</name>
+            <!-- REPLACE NEXUS SERVER PRIVATE IP -->
+            <url>http://172.31.69.72:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <profiles>
         <profile>
             <id>springboot</id>
